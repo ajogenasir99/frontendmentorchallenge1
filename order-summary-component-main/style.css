@@ -1,0 +1,188 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    align-items: center;
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.card{
+    border-radius: 20px;
+    max-width: 450px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.card h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: hsl(223, 47%, 23%);
+    line-height: 28px;
+}
+ p {
+    font-size: 16px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    padding: 0 50px;
+}
+
+.hero-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.payment-plan {
+    display: flex;
+    background: hsl(225, 100%, 98%);
+    width: 400px;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.payment-plan a{
+    color: hsl(245, 75%, 52%);
+}
+
+.payment-plan a:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+
+}
+
+.music-icon{
+    padding: 25px 25px 25px 0px;
+}
+
+.annual-cost {
+        display: block;
+}
+
+.annual-cost h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 5px 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-cost p {
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
+.pay-btn {
+    width: 400px;
+    height: 50px;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 20px 20px hsl(229, 61%, 86%);
+}
+.pay-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.cancel {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    margin: 0 0 20px 0;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 700px ){
+    #container{
+        margin-top: 20px;
+        height: 100vh;
+    }
+    .card {
+        max-width: 300px;
+        overflow: hidden;
+    }
+    .hero-img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+    }
+
+   .card h1{
+        font-size: 20px;
+        margin-top:20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .payment-plan {
+        width: 250px;
+        margin: 5px;
+    }
+
+    .music-icon {
+        padding: 15px 15px 15px 0px;
+    }
+
+    .annual-cost h3 {
+        font-weight: 700;
+        font-size: 14px;
+        margin: 1px 0;
+        color: hsl(223, 47%, 23%);
+    }
+
+    .pay-btn {
+        width: 250px;
+        height: 50px;
+        margin: 15px;
+        box-shadow: 0 10px 10px hsl(229, 61%, 86%);
+    }
+
+    .cancel {
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+        margin: 0 0 10px 0;
+    }
+
+    .attribution {
+        font-size: 8px;
+        margin-bottom: 50px;
+    }
+    
+}
+
