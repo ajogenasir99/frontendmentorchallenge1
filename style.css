@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
